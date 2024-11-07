@@ -1,0 +1,120 @@
+/* Estilos gerais do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+    height: 100vh;
+}
+body {
+    background-image: url(https://cdn.motor1.com/images/mgl/JlgjM/s1/rimac-nevera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+/* Título */
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+/* Formulário */
+.formulario, .busca {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+ 
+/* Estilos de Labels e Inputs */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+ 
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+ 
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #007BFF;
+    background-color: #e6f7ff;
+    outline: none;
+}
+ 
+/* Botões */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+ 
+button:hover {
+    background-color: #0056b3;
+}
+ 
+/* Estilo para os resultados */
+#resultado {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+ 
+/* Estilo para cada item de aluno */
+.result-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+.result-item p {
+    margin: 5px 0;
+    color: #333;
+}
+ 
+/* Botões dentro de cada aluno */
+.result-item button {
+    background-color: #28a745;
+    margin-right: 10px;
+}
+ 
+.result-item button:hover {
+    background-color: #218838;
+}
+ 
+/* Estilo para as mensagens de resultado */
+#resultado p {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+}
