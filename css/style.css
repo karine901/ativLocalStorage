@@ -1,113 +1,128 @@
 /* Estilos gerais do body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
+    background-color: #f4f7fc;
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
+
 body {
-    background-image: url(https://cdn.motor1.com/images/mgl/JlgjM/s1/rimac-nevera.jpg);
+    background-image: url(https://images5.alphacoders.com/135/1353021.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
+
  
 /* Título */
 h1 {
-    color: #333;
+    color: #ffffff;
     font-size: 36px;
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
  
-/* Formulário */
-.formulario, .busca {
+/* Formulário geral */
+.formulario {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
 }
  
-/* Estilos de Labels e Inputs */
+/* Labels e Inputs */
 label {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 8px;
-    display: block;
-    color: #555;
+    color: #818080;
 }
  
 input[type="text"], input[type="number"] {
     width: 100%;
     padding: 12px;
-    margin-bottom: 16px;
+    font-size: 14px;
     border: 2px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
-    font-size: 14px;
     background-color: #f9f9f9;
     transition: border 0.3s ease;
 }
  
+/* Foco nos inputs */
 input[type="text"]:focus, input[type="number"]:focus {
     border-color: #007BFF;
-    background-color: #e6f7ff;
     outline: none;
+    background-color: #e6f7ff;
 }
  
-/* Botões */
+/* Botão */
 button {
-    padding: 12px 20px;
+    padding: 12px;
     font-size: 16px;
     color: #fff;
     background-color: #007BFF;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
+    width: 29%;
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
  
+/* Efeito ao passar o mouse no botão */
 button:hover {
     background-color: #0056b3;
 }
  
-/* Estilo para os resultados */
+/* Estilo para os resultados (lista de alunos) */
 #resultado {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
 }
  
-/* Estilo para cada item de aluno */
+/* Cada aluno */
 .result-item {
     background-color: #fff;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
     border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
  
+/* Informações do aluno */
 .result-item p {
-    margin: 5px 0;
-    color: #333;
+    margin: 8px 0;
+    color: #000000;
+    font-size: 16px;
 }
  
-/* Botões dentro de cada aluno */
+/* Botões de atualizar e remover */
 .result-item button {
-    background-color: #28a745;
+    padding: 8px 12px;
     margin-right: 10px;
-}
+    background-color: #28a745;
+    font-size: 14px;
+    border-radius: 8px;
+    width: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+     }
  
+/* Efeito ao passar o mouse no botão de atualizar/remover */
 .result-item button:hover {
     background-color: #218838;
 }
@@ -115,6 +130,53 @@ button:hover {
 /* Estilo para as mensagens de resultado */
 #resultado p {
     font-size: 16px;
-    color: #888;
-    text-align: center;
+    color: #111010;
+    text-align: left;
+}
+ 
+/* Ajuste da largura dos campos de busca */
+.busca {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+ 
+.busca input[type="text"] {
+    width: 80%;
+    margin-right: 10px;
+}
+ 
+.busca button {
+    width: 18%;
+}
+ 
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .formulario {
+        width: 100%;
+        padding: 20px;
+    }
+ 
+    .busca input[type="text"] {
+        width: 70%;
+    }
+ 
+    .busca button {
+        width: 25%;
+    }
+ 
+    h1 {
+        font-size: 28px;
+    }
+ 
+    .result-item {
+        padding: 15px;
+    }
+ 
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
 }
